@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navbar{  
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    background-color: #072D44;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    overflow: hidden;
+    height: 60px;
+    
+}
+.Nav-buttons{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    font-weight: bold;
+}
+.Nav-buttons button{
+    background-color: transparent;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+.LogIn {
+    background-color: none;         
+    color: rgb(255, 255, 255);                  
+    border: none;                    
+    padding: 12px 40px;              
+    font-size: 16px;   
+    font-weight: bolder;               
+    text-align: center;               
+    cursor: pointer;               
+    border-radius: 50px;              
+    transition: background-color 0.3s ease;  
+}
+
+.LogIn:hover {
+    background-color:#3D606D;           
+}
+
+.search-bar {
+    display: flex;
+}
+.search-bar input {
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.logo {
+    margin: 9px;
+    height: 120px;
+    width: 120px;
+}
+
+.profile i{
+    width: 24px;
+    height: 24px; 
+    fill: currentColor; 
+}
+
+.profile:hover{
+    transform: translate(4px, -4px); 
+}
+.Cart{
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center; 
+    font-weight: bolder;
+    background-color: none;         
+    color: rgb(255, 255, 255);                     
+    border: none;                     
+    padding: 12px 40px;               
+    font-size: 16px;                  
+    text-align: center;               
+    cursor: pointer;                
+    border-radius: 50px;             
+    transition: background-color 0.3s ease; 
+}
+
+.Cartt {
+    font-size: 16px; 
+    color: currentColor;
+    font-weight: bolder;
+    transition: transform 0.3s ease;  
+}
+.Cart:hover{
+    background-color:#3D606D;   
+}
+.Menu{
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center; 
+    padding: 0; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+  
+}
+.size-8 {
+    width: 24px; 
+    height: 24px; 
+    fill: currentColor; 
+}
+.Menu:hover{
+    transform: translate(4px, -4px); 
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10px; 
+}
+.i{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.title {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Best-Selling-products {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0062c4;
+}
+
+.sidemenu {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3D606D;;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 0; 
+    color: white;
+    display: flex;         
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.sidemenu-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;  
+    padding-left: 10px; 
+    margin-bottom: 10px;  
+}
+
+#sidebar {
+    margin: 0;
+    padding: 3px; 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#closeBtn {
+    background-color: transparent; 
+    color: white; 
+    padding: 10px;  
+    border: none; 
+    cursor: pointer;
+    font-size: 25px;  
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+#closeBtn i {
+    font-size: 30px; 
+}
+
+.sidemenu ul {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+    width: 100%;           
+}
+
+.sidemenu li {
+    padding: 8px 10px;
+}
+
+.sidemenu a {
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    background-color: #575757;
+}
+
+
+
+.footer {
+    background-color: #072D44;
+    color: white;
+    padding: 30px 0 0;
+    margin-top: 40px;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    
+}
+
+
+.logo-col {
+    align-self: flex-start; 
+    margin-top: -20px; 
+    margin-right: 30px; 
+}
+
+.footer-logo {
+    height: 150px; 
+    width: 120px; 
+    transform: scale(1.3) translateY(-20px); 
+    transform-origin: left top; 
+    margin-bottom: -20px;
+}
+
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-text {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0062c4;
+}
+.footer-copyright {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 14px;
+}
