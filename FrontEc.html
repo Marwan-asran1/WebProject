@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleEc.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>VEXA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="StyleEc.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>VEXA</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img class="logo" src="Footerlogo.png" alt="logo">
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Add this line -->
-            </div>
-            <div class="links">
-                <a href="#"> 
-                       <button class="profile">
-                        <i class="fa-solid fa-user"></i>
-                            <span class="icon-text">Profile</span>   
-                       </button>        
-               </a>
-               <a href="#">
-                   <button class="Cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                           <span class="icon-text2">Cart</span>   
-                      </button>
-               </a>
 
-               <a href="#">
-                   <button class="Menu">
-                    <i class="fa-solid fa-bars"></i>
-                      </button>
-               </a>
-           </div>
-        </nav>
-    </header>
-    <div class="img-container">
-        <img class="i" src="https://drive.google.com/uc?export=view&id=1Iy6-ojDb2z96CN4gpezxTADBTqmqwsdr" alt="ewewewe">
-    </div>
-    
-    <div class="title">
-        <h2>Best Sellers</h2>
-    </div>
+  <header>
+    <nav class="navbar">
+      <a href="/">
+        <img class="logo" src="Footerlogo.png" alt="VEXA logo" />
+      </a>
+      
+      <div class="search-bar" role="search">
+        <input type="text" placeholder="Search products..." aria-label="Search products" />
+        <button class="search-button" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      
+      <div class="links">
+        <button class="profile" aria-label="User profile">
+          <i class="fa-solid fa-user"></i> Profile
+        </button>
+        
+        <button onclick="open_cart()" class="Cart" aria-label="Shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i> Cart
+        </button>
+        
+        <button class="Menu" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    <div class="products-container">
-        <div class="product">
-            <img src="d1.webp" alt="iPhone 16e">
-            <h3>iPhone 16e</h3>
-            <p class="price">$700.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="d22.jpg" alt="Iphone 15">
-            <h3>Iphone 15</h3>
-            <p class="price">$750.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="air.jpg" alt="AirPods 3Gen">
-            <h3>AirPods 3Gen</h3>
-            <p class="price">$300.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="an5.webp" alt="Acer Nitro 5">
-            <h3>Acer Nitro 5</h3>
-            <p class="price">$1,300.99</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
+<div class="Cart-menu">
+  <div class="top-cart">
+    <h3>My Cart <span>(0 Items in cart)</span></h3>
+    <span onclick="close_cart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+  </div>
+
+  <div class="item-in-cart">
+  </div>
+
+  <div class="bottom-cart">
+    <div class="total">
+      <p>Cart Subtotal</p>
+      <p class="price-cart-total">$0.00</p>
     </div>
+    <div class="button-cart">
+      <button class="btn-cart">Proceed to checkout</button>
+      <button class="btn-cart">Shop more</button>
+    </div>
+  </div>
+</div>
+
+<div class="img-container">
+  <img class="i" src="img1.png" alt="ewewewe" />
+</div>
+
+<div class="title">
+  <h2>Best Sellers</h2>
+</div>
+
+<div class="products-container">
+  <div class="product">
+    <img src="d1.webp" alt="iPhone 16e" />
+    <h3>iPhone 16e</h3>
+    <p class="price">$700.00</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="d22.jpg" alt="Iphone 15" />
+    <h3>Iphone 15</h3>
+    <p class="price">$750.00</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="air.jpg" alt="AirPods 3Gen" />
+    <h3>AirPods 3Gen</h3>
+    <p class="price">$300.00</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="an5.webp" alt="Acer Nitro 5" />
+    <h3>Acer Nitro 5</h3>
+    <p class="price">$1,300.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
 <footer class="footer">
-    <div class="footer-container">
-        <!-- Logo Column -->
-        <div class="footer-col logo-col">
-            <img src="Footerlogo.png" alt="VEXA Logo" class="footer-logo">
-        </div>
-        
-        <!-- Contact Column -->
-        <div class="footer-col contact-col">
-            <h3 class="footer-heading">Contact Us</h3>
-            <p class="footer-text">Email: VEXA@gmail.com</p>
-            <p class="footer-text">Phone: +20 01234567890</p>
-        </div>
-        
-        <!-- Social Media Column -->
-        <div class="footer-col social-col">
-            <h3 class="footer-heading">Follow Us</h3>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/?lang=en" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
+  <div class="footer-container">
+    <div class="logo-col">
+      <img src="Footerlogo.png" alt="VEXA Logo" class="footer-logo" />
     </div>
+    <div class="contact-col">
+      <h3 class="footer-heading">Contact Us</h3>
+      <p class="footer-text">Email: VEXA@gmail.com</p>
+      <p class="footer-text">Phone: +20 01234567890</p>
+    </div>
+    <div class="social-col">
+      <h3 class="footer-heading">Follow Us</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/?lang=en" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Copyright Section -->
-    <div class="footer-copyright">
-        <p>&copy; 2025 VEXA. All Rights Reserved.</p>
-    </div>
+  <div class="footer-copyright">
+    <p>&copy; 2025 VEXA. All Rights Reserved.</p>
+  </div>
 </footer>
+<div id="checkout-section" style="display: none;">
+  <h2>Checkout</h2>
+  <div id="checkout-items"></div>
+  <form id="order-form">
+    <label>Name: <input type="text" required></label><br>
+    <label>Email: <input type="email" required></label><br>
+    <label>Address: <textarea required></textarea></label><br>
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+
+<script src="JavaSall.js"></script>
 </body>
 </html>
