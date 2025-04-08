@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vexa</title>
+    <link rel="stylesheet" href="AdminStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">   
+            <img id="logo" src="Footerlogo1.2.png" alt="Logo" class="logo">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+            </div>
+            <button class="Profile" onclick="toggleSubMenu()"> <i class="fa-regular fa-user"></i>
+                <span> Profile</span>
+            </button>
+
+
+        </nav>
+</header>
+<div class="sub_menu_wrap" id="subMenu">
+    <div class="sub_menu">
+      <div class="user_info">
+        <h2 id="username">--</h2>
+      </div>
+      <hr>
+      <a href="#" class="sub_menu_link">
+        <i class="fa-solid fa-circle-user"></i>
+        <p>Edit Profile</p>
+      </a>
+      <a href="#" class="sub_menu_link">
+        <i class="fa-solid fa-gear"></i>
+        <p>Settings</p>
+      </a>
+      </a>
+      <a href="#" class="sub_menu_link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <p>Log out</p>
+      </a>
+    </div>
+  </div>
+  
+
+<h2>Mobile Phones</h2>
+<div class="products">
+    <div class="product">
+        <img src="iphone15.jpeg" alt="iPhone 15">
+        <h3>iPhone 15</h3>
+        <p class="price">$799</p>
+        <p>6.1-inch display, A16 Bionic chip, Dual 48MP cameras, 128GB storage</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+ 
+    
+    <div class="product">
+        <img src="16.jpeg" alt="iPhone 16e">
+        <h3>iPhone 16e</h3>
+        <p class="price">$699</p>
+        <p>6.1-inch display, A15 Bionic chip, Dual 12MP cameras, 128GB storage</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+    <div class="product">
+        <img src="s23.jpeg" alt="Samsung Galaxy S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">$799</p>
+        <p>6.1-inch display, Snapdragon 8 Gen 2, Triple 50MP cameras, 128GB storage</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+    <div class="product">
+        <img src="p7.jpeg" alt="Google Pixel 7">
+        <h3>Google Pixel 7</h3>
+        <p class="price">$599</p>
+        <p>6.3-inch display, Tensor G2 chip, Dual 50MP cameras, 128GB storage</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+    <button id="add">+</button>
+</div>
+<hr>
+<h2>HeadPhones</h2>
+
+<div class="products">
+    <div class="product">
+        <img src="airpods.jpg" alt="AirPods 3rd Gen">
+        <h3>AirPods 3rd Gen</h3>
+        <p class="price">$179</p>
+        <p>Spatial audio, Adaptive EQ, 6 hours of listening time</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+    <div class="product">
+        <img src="sony.avif" alt="Sony WH-1000XM4">
+        <h3>Sony WH-1000XM4</h3>
+        <p class="price">$348</p>
+        <p>Noise-canceling, 30 hours battery life, Comfortable fit</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+    <div class="product">
+        <img src="bose.avif" alt="Bose QuietComfort 35 II">
+        <h3>Bose QuietComfort 35 II</h3>
+        <p class="price">$299</p>
+        <p>Noise cancellation, Alexa voice control, 20 hours battery life</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+
+    <div class="product">
+        <img src="beats.jpg" alt="Beats Solo Pro">
+        <h3>Beats Solo Pro</h3>
+        <p class="price">$299</p>
+        <p>Active noise-canceling, 22 hours of playback, Comfortable design</p>
+        <div class="Quantity">
+            <p>Available: <span class="Product_quantity">10</span></p>
+            <button class="EditQuan" onclick="decrement(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="EditQuan" onclick="increment(this)"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="Remove-btn">Remove</i></button> 
+    </div>
+    <button id="add2">+</button>
+</div>
+
+<script type="text/javascript" src="AdminScript.js"></script>
+</body>
+</html>
