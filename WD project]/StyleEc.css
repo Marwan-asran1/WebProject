@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+}
+header{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    background-color: #072D44;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    width: 100%;
+    height: 60px;
+    
+}
+.links{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    font-weight: bold;
+}
+.links a{
+    background-color: transparent;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.search-bar {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 5px;
+    
+}
+.search-bar input {
+    height: 37px;
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.search-button {
+    padding: 8px 16px;
+    background-color: #b5b5b5;
+    color: #072D44;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+     
+}
+
+.search-button:hover {
+    background-color: #000000;
+    color:#ffffff
+}
+.logo {
+    margin: 9px;
+    height: 120px;
+    width: 120px;
+}
+.profile, .Cart, .Menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+.profile i, .Cart i, .Menu i {
+    font-size: 22px;
+}
+.Menu:hover{
+    color: #a4a4a4;
+}
+.profile:hover, .Cart:hover  {
+    transform: translate(4px, -4px);
+    color: #a4a4a4;
+}
+/*------------------------------------------------*/
+.img-container{
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically if needed */
+    margin-top: 10px; /* Adds spacing below the navbar */
+}
+.i{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.title {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 30px;
+    font-family:serif;
+}
+.products-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0062c4;
+}
+
+
+/* Footer Base Styles */
+.footer {
+    background-color: #072D44;
+    color: white;
+    padding: 30px 0 0;
+    margin-top: 40px;
+}
+
+/* Main Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Footer Columns */
+
+
+/* Logo Column Specifics */
+.logo-col {
+    align-self: flex-start; /* Aligns logo to top */
+    margin-top: -20px; /* Pulls logo upward */
+    margin-right: 30px; /* Keeps existing right gap */
+}
+
+.footer-logo {
+    height: 150px; /* Keep original height */
+    width: 180px; /* Keep original width */
+    transform: scale(1.3) translateY(-20px); /* Scales up 30% */
+    transform-origin: left top; /* Scales from top-left corner */
+    margin-bottom: -20px;
+}
+
+/* Text Elements */
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-text {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0062c4;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff;
+    margin-top: 20px;
+    font-size: 14px;
+}/* --- Sub Menu Wrapper --- */
+
+.sub_menu_wrap {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .sub_menu_wrap.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* --- Inner Sub Menu Content --- */
+  .sub_menu {
+    padding: 20px;
+  }
+  
+  /* --- User Info Section --- */
+  .user_info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user_info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+  }
+  
+  .user_info h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0 0;
+  }
+  
+  /* --- Sub Menu Link Items --- */
+  .sub_menu_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin: 14px 0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+  }
+  
+  .sub_menu_link:hover {
+    background: #f2f2f2;
+  }
+  
+  .sub_menu_link img {
+    width: 36px;
+    height: 36px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+    transition: background 0.2s ease;
+  }
+  
+  .sub_menu_link p {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  /* --- Logout Button Style --- */
+  .logout-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #e53935;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c62828;
+  }
+.sidemenu {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 0; /* No space between "Menu" and the top */
+    color: white;
+
+    display: flex;         /* Use Flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.sidemenu-header {
+    display: flex; /* Align h1 and button side by side */
+    justify-content: space-between; /* Make the h1 align to the left and button to the right */
+    align-items: center; /* Vertically center the items */
+    width: 100%;  /* Make it take up the full width */
+    padding-left: 10px; /* Adds some space to the left */
+    margin-bottom: 10px;  /* Optional: Adds space below the header */
+}
+
+#sidebar {
+    margin: 0;
+    padding: 3px; /* Padding around the text */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#closeBtn {
+    background-color: transparent; /* Remove the button background */
+    color: white; /* Text color */
+    padding: 10px;  /* No padding around the button */
+    border: none; /* Remove border */
+    cursor: pointer;
+    font-size: 25px;  /* FontAwesome icon size */
+    display: inline-flex; /* Align the icon inside the button */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+}
+#closeBtn i {
+    font-size: 30px; /* Adjust icon size */
+}
+
+.sidemenu ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;            /* Removes any default padding */
+    margin: 0;             /* Removes any default margin */
+    width: 100%;           /* Ensures full width for the list */
+}
+
+.sidemenu li {
+    padding: 8px 10px;
+}
+
+.sidemenu a {
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    background-color: #575757;
+}
+.dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+
+}
+
+.dropdown ul{
+
+    display: block;
+    margin: 10px;
+
+}
+
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+  .dropdown {
+    display: none;
+    padding-left: 1rem;
+  }
+
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown ul li {
+    margin: 5px 0;
+  }
+
+  .dropdown-parent.active .dropdown {
+    display: block;
+  }
+  .dropdown {
+    display: none;
+    padding-left: 1rem;
+  }
+  
+  .dropdown-parent.active .dropdown {
+    display: block;
+  }
+  
+
